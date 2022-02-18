@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30AB93F74958DCBB4995647F /* Pods_TaskForSoftXpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA28F026E613571C32F5D64 /* Pods_TaskForSoftXpert.framework */; };
 		C592840C27BF96A6008DAC41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592840B27BF96A6008DAC41 /* AppDelegate.swift */; };
 		C592840E27BF96A6008DAC41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592840D27BF96A6008DAC41 /* SceneDelegate.swift */; };
-		C592841027BF96A6008DAC41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592840F27BF96A6008DAC41 /* ViewController.swift */; };
-		C592841327BF96A6008DAC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C592841127BF96A6008DAC41 /* Main.storyboard */; };
 		C592841527BF96AD008DAC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C592841427BF96AD008DAC41 /* Assets.xcassets */; };
 		C592841827BF96AD008DAC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C592841627BF96AD008DAC41 /* LaunchScreen.storyboard */; };
+		C5DB090527BF99EC008169C7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB090327BF99EB008169C7 /* HomeVC.swift */; };
+		C5DB090627BF99EC008169C7 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5DB090427BF99EB008169C7 /* HomeVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75452CAB09F5E825127E9A4F /* Pods-TaskForSoftXpert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskForSoftXpert.release.xcconfig"; path = "Target Support Files/Pods-TaskForSoftXpert/Pods-TaskForSoftXpert.release.xcconfig"; sourceTree = "<group>"; };
 		C592840827BF96A6008DAC41 /* TaskForSoftXpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskForSoftXpert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C592840B27BF96A6008DAC41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C592840D27BF96A6008DAC41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C592840F27BF96A6008DAC41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C592841227BF96A6008DAC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C592841427BF96AD008DAC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C592841727BF96AD008DAC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C592841927BF96AD008DAC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5DB090327BF99EB008169C7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C5DB090427BF99EB008169C7 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		DEA28F026E613571C32F5D64 /* Pods_TaskForSoftXpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskForSoftXpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43D1423575FD84DDFB1D6F4 /* Pods-TaskForSoftXpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskForSoftXpert.debug.xcconfig"; path = "Target Support Files/Pods-TaskForSoftXpert/Pods-TaskForSoftXpert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AB93F74958DCBB4995647F /* Pods_TaskForSoftXpert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56F8736FA702FDCEA5F18FD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEA28F026E613571C32F5D64 /* Pods_TaskForSoftXpert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C59283FF27BF96A6008DAC41 = {
 			isa = PBXGroup;
 			children = (
 				C592840A27BF96A6008DAC41 /* TaskForSoftXpert */,
 				C592840927BF96A6008DAC41 /* Products */,
+				D9AE223BDAF967FBEC618CF2 /* Pods */,
+				56F8736FA702FDCEA5F18FD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,48 @@
 		C592840A27BF96A6008DAC41 /* TaskForSoftXpert */ = {
 			isa = PBXGroup;
 			children = (
+				C5DB090127BF997B008169C7 /* Scenes */,
+				C592842527BF97BF008DAC41 /* Support Files */,
+			);
+			path = TaskForSoftXpert;
+			sourceTree = "<group>";
+		};
+		C592842527BF97BF008DAC41 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				C592840B27BF96A6008DAC41 /* AppDelegate.swift */,
 				C592840D27BF96A6008DAC41 /* SceneDelegate.swift */,
-				C592840F27BF96A6008DAC41 /* ViewController.swift */,
-				C592841127BF96A6008DAC41 /* Main.storyboard */,
 				C592841427BF96AD008DAC41 /* Assets.xcassets */,
 				C592841627BF96AD008DAC41 /* LaunchScreen.storyboard */,
 				C592841927BF96AD008DAC41 /* Info.plist */,
 			);
-			path = TaskForSoftXpert;
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		C5DB090127BF997B008169C7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C5DB090227BF99AC008169C7 /* Home Scene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C5DB090227BF99AC008169C7 /* Home Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C5DB090327BF99EB008169C7 /* HomeVC.swift */,
+				C5DB090427BF99EB008169C7 /* HomeVC.xib */,
+			);
+			path = "Home Scene";
+			sourceTree = "<group>";
+		};
+		D9AE223BDAF967FBEC618CF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E43D1423575FD84DDFB1D6F4 /* Pods-TaskForSoftXpert.debug.xcconfig */,
+				75452CAB09F5E825127E9A4F /* Pods-TaskForSoftXpert.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +122,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C592841C27BF96AD008DAC41 /* Build configuration list for PBXNativeTarget "TaskForSoftXpert" */;
 			buildPhases = (
+				0C2FE26A0C2A5AB15CED9812 /* [CP] Check Pods Manifest.lock */,
 				C592840427BF96A6008DAC41 /* Sources */,
 				C592840527BF96A6008DAC41 /* Frameworks */,
 				C592840627BF96A6008DAC41 /* Resources */,
@@ -125,19 +174,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				C592841827BF96AD008DAC41 /* LaunchScreen.storyboard in Resources */,
+				C5DB090627BF99EC008169C7 /* HomeVC.xib in Resources */,
 				C592841527BF96AD008DAC41 /* Assets.xcassets in Resources */,
-				C592841327BF96A6008DAC41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C2FE26A0C2A5AB15CED9812 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskForSoftXpert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C592840427BF96A6008DAC41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C592841027BF96A6008DAC41 /* ViewController.swift in Sources */,
+				C5DB090527BF99EC008169C7 /* HomeVC.swift in Sources */,
 				C592840C27BF96A6008DAC41 /* AppDelegate.swift in Sources */,
 				C592840E27BF96A6008DAC41 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +220,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C592841127BF96A6008DAC41 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C592841227BF96A6008DAC41 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C592841627BF96AD008DAC41 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,12 +349,14 @@
 		};
 		C592841D27BF96AD008DAC41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43D1423575FD84DDFB1D6F4 /* Pods-TaskForSoftXpert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WSH653UKSN;
-				INFOPLIST_FILE = TaskForSoftXpert/Info.plist;
+				INFOPLIST_FILE = "TaskForSoftXpert/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +370,14 @@
 		};
 		C592841E27BF96AD008DAC41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75452CAB09F5E825127E9A4F /* Pods-TaskForSoftXpert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WSH653UKSN;
-				INFOPLIST_FILE = TaskForSoftXpert/Info.plist;
+				INFOPLIST_FILE = "TaskForSoftXpert/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
