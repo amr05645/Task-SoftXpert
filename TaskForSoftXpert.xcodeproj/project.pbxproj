@@ -8,16 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		30AB93F74958DCBB4995647F /* Pods_TaskForSoftXpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA28F026E613571C32F5D64 /* Pods_TaskForSoftXpert.framework */; };
+		C5552E0D27BFD7F400994776 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */; };
+		C5552E0E27BFD7F400994776 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */; };
+		C5552E1327BFD84300994776 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E1227BFD84300994776 /* ReusableView.swift */; };
+		C5552E1727BFDEC800994776 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E1527BFDEC800994776 /* FilterCollectionViewCell.swift */; };
+		C5552E1827BFDEC800994776 /* FilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5552E1627BFDEC800994776 /* FilterCollectionViewCell.xib */; };
 		C592840C27BF96A6008DAC41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592840B27BF96A6008DAC41 /* AppDelegate.swift */; };
 		C592840E27BF96A6008DAC41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592840D27BF96A6008DAC41 /* SceneDelegate.swift */; };
 		C592841527BF96AD008DAC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C592841427BF96AD008DAC41 /* Assets.xcassets */; };
 		C592841827BF96AD008DAC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C592841627BF96AD008DAC41 /* LaunchScreen.storyboard */; };
 		C5DB090527BF99EC008169C7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB090327BF99EB008169C7 /* HomeVC.swift */; };
 		C5DB090627BF99EC008169C7 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5DB090427BF99EB008169C7 /* HomeVC.xib */; };
+		C5DB090A27BFC73F008169C7 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB090927BFC73F008169C7 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75452CAB09F5E825127E9A4F /* Pods-TaskForSoftXpert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskForSoftXpert.release.xcconfig"; path = "Target Support Files/Pods-TaskForSoftXpert/Pods-TaskForSoftXpert.release.xcconfig"; sourceTree = "<group>"; };
+		C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		C5552E1227BFD84300994776 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		C5552E1527BFDEC800994776 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5552E1627BFDEC800994776 /* FilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCollectionViewCell.xib; sourceTree = "<group>"; };
 		C592840827BF96A6008DAC41 /* TaskForSoftXpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskForSoftXpert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C592840B27BF96A6008DAC41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C592840D27BF96A6008DAC41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +37,7 @@
 		C592841927BF96AD008DAC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5DB090327BF99EB008169C7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		C5DB090427BF99EB008169C7 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		C5DB090927BFC73F008169C7 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		DEA28F026E613571C32F5D64 /* Pods_TaskForSoftXpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskForSoftXpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43D1423575FD84DDFB1D6F4 /* Pods-TaskForSoftXpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskForSoftXpert.debug.xcconfig"; path = "Target Support Files/Pods-TaskForSoftXpert/Pods-TaskForSoftXpert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +62,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C5552E0827BFD7A100994776 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C5552E0A27BFD7CA00994776 /* CollectionView Cell */,
+				C5552E0927BFD7BA00994776 /* TableView Cell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C5552E0927BFD7BA00994776 /* TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */,
+				C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */,
+			);
+			path = "TableView Cell";
+			sourceTree = "<group>";
+		};
+		C5552E0A27BFD7CA00994776 /* CollectionView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5552E1527BFDEC800994776 /* FilterCollectionViewCell.swift */,
+				C5552E1627BFDEC800994776 /* FilterCollectionViewCell.xib */,
+			);
+			path = "CollectionView Cell";
+			sourceTree = "<group>";
+		};
+		C5552E1027BFD82500994776 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C5552E1227BFD84300994776 /* ReusableView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C59283FF27BF96A6008DAC41 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +118,8 @@
 		C592840A27BF96A6008DAC41 /* TaskForSoftXpert */ = {
 			isa = PBXGroup;
 			children = (
+				C5552E1027BFD82500994776 /* Helpers */,
+				C5DB090827BFC723008169C7 /* Model */,
 				C5DB090127BF997B008169C7 /* Scenes */,
 				C592842527BF97BF008DAC41 /* Support Files */,
 			);
@@ -100,10 +149,19 @@
 		C5DB090227BF99AC008169C7 /* Home Scene */ = {
 			isa = PBXGroup;
 			children = (
+				C5552E0827BFD7A100994776 /* Cells */,
 				C5DB090327BF99EB008169C7 /* HomeVC.swift */,
 				C5DB090427BF99EB008169C7 /* HomeVC.xib */,
 			);
 			path = "Home Scene";
+			sourceTree = "<group>";
+		};
+		C5DB090827BFC723008169C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5DB090927BFC73F008169C7 /* DataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D9AE223BDAF967FBEC618CF2 /* Pods */ = {
@@ -174,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C592841827BF96AD008DAC41 /* LaunchScreen.storyboard in Resources */,
+				C5552E1827BFDEC800994776 /* FilterCollectionViewCell.xib in Resources */,
 				C5DB090627BF99EC008169C7 /* HomeVC.xib in Resources */,
+				C5552E0E27BFD7F400994776 /* HomeTableViewCell.xib in Resources */,
 				C592841527BF96AD008DAC41 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5DB090527BF99EC008169C7 /* HomeVC.swift in Sources */,
+				C5552E0D27BFD7F400994776 /* HomeTableViewCell.swift in Sources */,
+				C5DB090A27BFC73F008169C7 /* DataModel.swift in Sources */,
+				C5552E1327BFD84300994776 /* ReusableView.swift in Sources */,
 				C592840C27BF96A6008DAC41 /* AppDelegate.swift in Sources */,
 				C592840E27BF96A6008DAC41 /* SceneDelegate.swift in Sources */,
+				C5552E1727BFDEC800994776 /* FilterCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
