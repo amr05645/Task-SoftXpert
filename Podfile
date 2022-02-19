@@ -6,5 +6,9 @@ target 'TaskForSoftXpert' do
   use_frameworks!
 
   # Pods for TaskForSoftXpert
+  pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'PKHUD'
+  pod 'DropDown'
 
 end

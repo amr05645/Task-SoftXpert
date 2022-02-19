@@ -3,11 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		30AB93F74958DCBB4995647F /* Pods_TaskForSoftXpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA28F026E613571C32F5D64 /* Pods_TaskForSoftXpert.framework */; };
+		C514454427C0F14B002D7E7F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514454327C0F14B002D7E7F /* APIClient.swift */; };
+		C514454727C0F17B002D7E7F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514454627C0F17B002D7E7F /* WebService.swift */; };
+		C514454A27C0F257002D7E7F /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514454927C0F257002D7E7F /* Recipes.swift */; };
+		C514454D27C0F27E002D7E7F /* HealthFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514454C27C0F27E002D7E7F /* HealthFilter.swift */; };
+		C514455027C0F29B002D7E7F /* RecipeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514454F27C0F29B002D7E7F /* RecipeResult.swift */; };
+		C514455327C0F2BA002D7E7F /* RecipeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514455227C0F2BA002D7E7F /* RecipeDetails.swift */; };
+		C542DB1527C0EE8400760348 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C542DB1427C0EE8400760348 /* APIRouter.swift */; };
 		C5552E0D27BFD7F400994776 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */; };
 		C5552E0E27BFD7F400994776 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */; };
 		C5552E1327BFD84300994776 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E1227BFD84300994776 /* ReusableView.swift */; };
@@ -19,11 +26,17 @@
 		C592841827BF96AD008DAC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C592841627BF96AD008DAC41 /* LaunchScreen.storyboard */; };
 		C5DB090527BF99EC008169C7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB090327BF99EB008169C7 /* HomeVC.swift */; };
 		C5DB090627BF99EC008169C7 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5DB090427BF99EB008169C7 /* HomeVC.xib */; };
-		C5DB090A27BFC73F008169C7 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB090927BFC73F008169C7 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75452CAB09F5E825127E9A4F /* Pods-TaskForSoftXpert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskForSoftXpert.release.xcconfig"; path = "Target Support Files/Pods-TaskForSoftXpert/Pods-TaskForSoftXpert.release.xcconfig"; sourceTree = "<group>"; };
+		C514454327C0F14B002D7E7F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C514454627C0F17B002D7E7F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		C514454927C0F257002D7E7F /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		C514454C27C0F27E002D7E7F /* HealthFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthFilter.swift; sourceTree = "<group>"; };
+		C514454F27C0F29B002D7E7F /* RecipeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResult.swift; sourceTree = "<group>"; };
+		C514455227C0F2BA002D7E7F /* RecipeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetails.swift; sourceTree = "<group>"; };
+		C542DB1427C0EE8400760348 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		C5552E1227BFD84300994776 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
@@ -37,7 +50,6 @@
 		C592841927BF96AD008DAC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5DB090327BF99EB008169C7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		C5DB090427BF99EB008169C7 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
-		C5DB090927BFC73F008169C7 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		DEA28F026E613571C32F5D64 /* Pods_TaskForSoftXpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskForSoftXpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43D1423575FD84DDFB1D6F4 /* Pods-TaskForSoftXpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskForSoftXpert.debug.xcconfig"; path = "Target Support Files/Pods-TaskForSoftXpert/Pods-TaskForSoftXpert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +72,16 @@
 				DEA28F026E613571C32F5D64 /* Pods_TaskForSoftXpert.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C542DB1327C0EE6600760348 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				C542DB1427C0EE8400760348 /* APIRouter.swift */,
+				C514454327C0F14B002D7E7F /* APIClient.swift */,
+				C514454627C0F17B002D7E7F /* WebService.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 		C5552E0827BFD7A100994776 /* Cells */ = {
@@ -118,9 +140,10 @@
 		C592840A27BF96A6008DAC41 /* TaskForSoftXpert */ = {
 			isa = PBXGroup;
 			children = (
-				C5552E1027BFD82500994776 /* Helpers */,
+				C542DB1327C0EE6600760348 /* NetWork */,
 				C5DB090827BFC723008169C7 /* Model */,
 				C5DB090127BF997B008169C7 /* Scenes */,
+				C5552E1027BFD82500994776 /* Helpers */,
 				C592842527BF97BF008DAC41 /* Support Files */,
 			);
 			path = TaskForSoftXpert;
@@ -159,7 +182,10 @@
 		C5DB090827BFC723008169C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C5DB090927BFC73F008169C7 /* DataModel.swift */,
+				C514454927C0F257002D7E7F /* Recipes.swift */,
+				C514454C27C0F27E002D7E7F /* HealthFilter.swift */,
+				C514454F27C0F29B002D7E7F /* RecipeResult.swift */,
+				C514455227C0F2BA002D7E7F /* RecipeDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +210,7 @@
 				C592840427BF96A6008DAC41 /* Sources */,
 				C592840527BF96A6008DAC41 /* Frameworks */,
 				C592840627BF96A6008DAC41 /* Resources */,
+				D9C33D3071623E28778A299A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D9C33D3071623E28778A299A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskForSoftXpert/Pods-TaskForSoftXpert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskForSoftXpert/Pods-TaskForSoftXpert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskForSoftXpert/Pods-TaskForSoftXpert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,12 +316,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5DB090527BF99EC008169C7 /* HomeVC.swift in Sources */,
+				C514455027C0F29B002D7E7F /* RecipeResult.swift in Sources */,
 				C5552E0D27BFD7F400994776 /* HomeTableViewCell.swift in Sources */,
-				C5DB090A27BFC73F008169C7 /* DataModel.swift in Sources */,
 				C5552E1327BFD84300994776 /* ReusableView.swift in Sources */,
 				C592840C27BF96A6008DAC41 /* AppDelegate.swift in Sources */,
+				C514454D27C0F27E002D7E7F /* HealthFilter.swift in Sources */,
+				C542DB1527C0EE8400760348 /* APIRouter.swift in Sources */,
+				C514454A27C0F257002D7E7F /* Recipes.swift in Sources */,
 				C592840E27BF96A6008DAC41 /* SceneDelegate.swift in Sources */,
 				C5552E1727BFDEC800994776 /* FilterCollectionViewCell.swift in Sources */,
+				C514454727C0F17B002D7E7F /* WebService.swift in Sources */,
+				C514455327C0F2BA002D7E7F /* RecipeDetails.swift in Sources */,
+				C514454427C0F14B002D7E7F /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
