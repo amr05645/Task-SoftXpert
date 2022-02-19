@@ -15,10 +15,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UINavigationController(rootViewController: HomeVC())
-        self.window = window
-        window.makeKeyAndVisible()
+        self.window = UIWindow(windowScene: windowScene)
+        
+        let router = SearchRouter.start()
+        let rootVC = router.entry
+        
+        self.window?.rootViewController = UINavigationController(rootViewController: rootVC!)
+        self.window?.makeKeyAndVisible()
     }
     
     @available(iOS 13.0, *)

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeTableViewCell: UITableViewCell, ReusableView {
     
@@ -18,7 +19,17 @@ class HomeTableViewCell: UITableViewCell, ReusableView {
     // MARK:- LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    //MARK:- Methods
+    func configure(result: RecipeResult?) {
+        self.titleLbl.text = result?.title  ?? ""
+        self.sourceLbl.text = "From \(result?.source  ?? "")"
+        self.healthLbl.text = result?.healthLabels?.joined(separator: ",  ")  ?? ""
+        if let url = URL(string: result?.image ?? "")  {
+            recipeImg.kf.indicatorType = .activity
+            recipeImg.kf.setImage(with: url)
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

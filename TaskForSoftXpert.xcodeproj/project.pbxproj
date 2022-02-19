@@ -14,12 +14,17 @@
 		C514454D27C0F27E002D7E7F /* HealthFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514454C27C0F27E002D7E7F /* HealthFilter.swift */; };
 		C514455027C0F29B002D7E7F /* RecipeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514454F27C0F29B002D7E7F /* RecipeResult.swift */; };
 		C514455327C0F2BA002D7E7F /* RecipeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514455227C0F2BA002D7E7F /* RecipeDetails.swift */; };
+		C514455827C0F6A8002D7E7F /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514455727C0F6A8002D7E7F /* HomeProtocol.swift */; };
+		C514455C27C0FB70002D7E7F /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514455B27C0FB70002D7E7F /* HomePresenter.swift */; };
+		C514456027C1005C002D7E7F /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514455F27C1005C002D7E7F /* HomeInteractor.swift */; };
+		C514456327C10297002D7E7F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514456227C10297002D7E7F /* HomeRouter.swift */; };
+		C514456727C1099F002D7E7F /* IndicatorFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514456627C1099F002D7E7F /* IndicatorFooter.swift */; };
+		C514456A27C109D0002D7E7F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514456927C109D0002D7E7F /* UIViewController+Extension.swift */; };
 		C542DB1527C0EE8400760348 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C542DB1427C0EE8400760348 /* APIRouter.swift */; };
 		C5552E0D27BFD7F400994776 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */; };
 		C5552E0E27BFD7F400994776 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */; };
 		C5552E1327BFD84300994776 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E1227BFD84300994776 /* ReusableView.swift */; };
 		C5552E1727BFDEC800994776 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E1527BFDEC800994776 /* FilterCollectionViewCell.swift */; };
-		C5552E1827BFDEC800994776 /* FilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5552E1627BFDEC800994776 /* FilterCollectionViewCell.xib */; };
 		C592840C27BF96A6008DAC41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592840B27BF96A6008DAC41 /* AppDelegate.swift */; };
 		C592840E27BF96A6008DAC41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592840D27BF96A6008DAC41 /* SceneDelegate.swift */; };
 		C592841527BF96AD008DAC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C592841427BF96AD008DAC41 /* Assets.xcassets */; };
@@ -36,12 +41,17 @@
 		C514454C27C0F27E002D7E7F /* HealthFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthFilter.swift; sourceTree = "<group>"; };
 		C514454F27C0F29B002D7E7F /* RecipeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResult.swift; sourceTree = "<group>"; };
 		C514455227C0F2BA002D7E7F /* RecipeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetails.swift; sourceTree = "<group>"; };
+		C514455727C0F6A8002D7E7F /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		C514455B27C0FB70002D7E7F /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		C514455F27C1005C002D7E7F /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		C514456227C10297002D7E7F /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		C514456627C1099F002D7E7F /* IndicatorFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorFooter.swift; sourceTree = "<group>"; };
+		C514456927C109D0002D7E7F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		C542DB1427C0EE8400760348 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		C5552E1227BFD84300994776 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		C5552E1527BFDEC800994776 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
-		C5552E1627BFDEC800994776 /* FilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCollectionViewCell.xib; sourceTree = "<group>"; };
 		C592840827BF96A6008DAC41 /* TaskForSoftXpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskForSoftXpert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C592840B27BF96A6008DAC41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C592840D27BF96A6008DAC41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				C5552E1527BFDEC800994776 /* FilterCollectionViewCell.swift */,
-				C5552E1627BFDEC800994776 /* FilterCollectionViewCell.xib */,
 			);
 			path = "CollectionView Cell";
 			sourceTree = "<group>";
@@ -115,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				C5552E1227BFD84300994776 /* ReusableView.swift */,
+				C514456627C1099F002D7E7F /* IndicatorFooter.swift */,
+				C514456927C109D0002D7E7F /* UIViewController+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -174,6 +185,10 @@
 			children = (
 				C5552E0827BFD7A100994776 /* Cells */,
 				C5DB090327BF99EB008169C7 /* HomeVC.swift */,
+				C514455B27C0FB70002D7E7F /* HomePresenter.swift */,
+				C514455F27C1005C002D7E7F /* HomeInteractor.swift */,
+				C514456227C10297002D7E7F /* HomeRouter.swift */,
+				C514455727C0F6A8002D7E7F /* HomeProtocol.swift */,
 				C5DB090427BF99EB008169C7 /* HomeVC.xib */,
 			);
 			path = "Home Scene";
@@ -259,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C592841827BF96AD008DAC41 /* LaunchScreen.storyboard in Resources */,
-				C5552E1827BFDEC800994776 /* FilterCollectionViewCell.xib in Resources */,
 				C5DB090627BF99EC008169C7 /* HomeVC.xib in Resources */,
 				C5552E0E27BFD7F400994776 /* HomeTableViewCell.xib in Resources */,
 				C592841527BF96AD008DAC41 /* Assets.xcassets in Resources */,
@@ -315,16 +329,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C514455827C0F6A8002D7E7F /* HomeProtocol.swift in Sources */,
 				C5DB090527BF99EC008169C7 /* HomeVC.swift in Sources */,
 				C514455027C0F29B002D7E7F /* RecipeResult.swift in Sources */,
+				C514456027C1005C002D7E7F /* HomeInteractor.swift in Sources */,
+				C514455C27C0FB70002D7E7F /* HomePresenter.swift in Sources */,
 				C5552E0D27BFD7F400994776 /* HomeTableViewCell.swift in Sources */,
 				C5552E1327BFD84300994776 /* ReusableView.swift in Sources */,
 				C592840C27BF96A6008DAC41 /* AppDelegate.swift in Sources */,
+				C514456A27C109D0002D7E7F /* UIViewController+Extension.swift in Sources */,
+				C514456327C10297002D7E7F /* HomeRouter.swift in Sources */,
 				C514454D27C0F27E002D7E7F /* HealthFilter.swift in Sources */,
 				C542DB1527C0EE8400760348 /* APIRouter.swift in Sources */,
 				C514454A27C0F257002D7E7F /* Recipes.swift in Sources */,
 				C592840E27BF96A6008DAC41 /* SceneDelegate.swift in Sources */,
 				C5552E1727BFDEC800994776 /* FilterCollectionViewCell.swift in Sources */,
+				C514456727C1099F002D7E7F /* IndicatorFooter.swift in Sources */,
 				C514454727C0F17B002D7E7F /* WebService.swift in Sources */,
 				C514455327C0F2BA002D7E7F /* RecipeDetails.swift in Sources */,
 				C514454427C0F14B002D7E7F /* APIClient.swift in Sources */,

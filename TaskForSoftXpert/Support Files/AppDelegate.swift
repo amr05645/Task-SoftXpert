@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DropDown
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,10 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UINavigationController(rootViewController: HomeVC())
-        self.window = window
-        window.makeKeyAndVisible()
+        
+        DropDown.startListeningToKeyboard()
+        
+        let router = SearchRouter.start()
+        let rootVC = router.entry
+        
+        self.window?.rootViewController = UINavigationController(rootViewController: rootVC!)
+        self.window?.makeKeyAndVisible()
         return true
     }
     

@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,7 +12,7 @@
             <connections>
                 <outlet property="filterCollectionView" destination="Mcx-ja-yw5" id="ZSP-9o-3g3"/>
                 <outlet property="homeTableView" destination="fsQ-yj-8aa" id="hOF-Dl-mLV"/>
-                <outlet property="searchBar" destination="GcB-xR-OU5" id="AIA-Y5-jbj"/>
+                <outlet property="searchBar" destination="4rh-9R-LBN" id="oPM-TU-jpP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,13 +21,23 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="GcB-xR-OU5">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-Ki-5By">
+                    <rect key="frame" x="0.0" y="165.5" width="414" height="696.5"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No search results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v84-eU-WcY">
+                    <rect key="frame" x="10" y="441" width="394" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4rh-9R-LBN">
                     <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mcx-ja-yw5">
-                    <rect key="frame" x="0.0" y="110" width="414" height="71.5"/>
-                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <rect key="frame" x="0.0" y="90" width="414" height="65.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O6G-Ic-PR5">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -37,34 +46,33 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fsQ-yj-8aa">
-                    <rect key="frame" x="0.0" y="191.5" width="414" height="670.5"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <rect key="frame" x="0.0" y="165.5" width="414" height="696.5"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fsQ-yj-8aa" firstAttribute="leading" secondItem="Mcx-ja-yw5" secondAttribute="leading" id="1fL-4u-Opf"/>
+                <constraint firstItem="jp1-Ki-5By" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3OH-Pq-Hun"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fsQ-yj-8aa" secondAttribute="bottom" id="446-KE-1Dg"/>
-                <constraint firstItem="Mcx-ja-yw5" firstAttribute="leading" secondItem="GcB-xR-OU5" secondAttribute="leading" id="46O-uS-P3u"/>
+                <constraint firstItem="4rh-9R-LBN" firstAttribute="bottom" secondItem="Mcx-ja-yw5" secondAttribute="top" constant="10" id="8k7-6g-7kM"/>
+                <constraint firstItem="Mcx-ja-yw5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9ti-iQ-0cL"/>
+                <constraint firstItem="jp1-Ki-5By" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Be4-nf-00k"/>
+                <constraint firstItem="v84-eU-WcY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Bip-hA-tX1"/>
+                <constraint firstItem="v84-eU-WcY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="P2H-ZR-yNo"/>
+                <constraint firstItem="jp1-Ki-5By" firstAttribute="top" secondItem="Mcx-ja-yw5" secondAttribute="bottom" constant="10" id="QZV-lA-245"/>
                 <constraint firstItem="fsQ-yj-8aa" firstAttribute="top" secondItem="Mcx-ja-yw5" secondAttribute="bottom" constant="10" id="X9e-u6-4Cp"/>
-                <constraint firstItem="GcB-xR-OU5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZpZ-lc-w0s"/>
-                <constraint firstItem="Mcx-ja-yw5" firstAttribute="top" secondItem="GcB-xR-OU5" secondAttribute="bottom" constant="10" id="aUO-kO-16j"/>
-                <constraint firstItem="GcB-xR-OU5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c5d-Cj-7eR"/>
+                <constraint firstItem="4rh-9R-LBN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZuM-cw-svg"/>
                 <constraint firstItem="fsQ-yj-8aa" firstAttribute="centerX" secondItem="Mcx-ja-yw5" secondAttribute="centerX" id="cdi-V6-O0h"/>
-                <constraint firstItem="Mcx-ja-yw5" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.08" id="f8M-N6-bC5"/>
-                <constraint firstItem="GcB-xR-OU5" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gzE-nZ-OaB"/>
-                <constraint firstItem="Mcx-ja-yw5" firstAttribute="centerX" secondItem="GcB-xR-OU5" secondAttribute="centerX" id="nDL-go-GNr"/>
+                <constraint firstItem="Mcx-ja-yw5" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="d4c-Yl-d5Y"/>
+                <constraint firstItem="4rh-9R-LBN" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="haH-v4-QK4"/>
+                <constraint firstItem="Mcx-ja-yw5" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.08" id="m7u-Fd-bUq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jp1-Ki-5By" secondAttribute="bottom" id="qHu-1A-20c"/>
+                <constraint firstItem="v84-eU-WcY" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="uN2-O1-DXH"/>
+                <constraint firstItem="4rh-9R-LBN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="yvq-4J-SAW"/>
             </constraints>
             <point key="canvasLocation" x="128" y="78"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
