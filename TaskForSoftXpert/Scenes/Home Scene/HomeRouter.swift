@@ -40,10 +40,10 @@ class SearchRouter: RouterSearchProtocol {
     
     func pushToRecipeDetails(with recipe: Recipe) {
         
-//        let router = DetailsRouter.start(with: recipe)
-//        guard let detailsVC = router.entry else {return}
-//
-//        entry?.navigationController?.pushViewController(detailsVC, animated: true)
+        let router = DetailsRouter.start(with: recipe)
+        guard let detailsVC = router.entry else {return}
+
+        entry?.navigationController?.pushViewController(detailsVC, animated: true)
     }
 
 }

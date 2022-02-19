@@ -20,6 +20,12 @@
 		C514456327C10297002D7E7F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514456227C10297002D7E7F /* HomeRouter.swift */; };
 		C514456727C1099F002D7E7F /* IndicatorFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514456627C1099F002D7E7F /* IndicatorFooter.swift */; };
 		C514456A27C109D0002D7E7F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514456927C109D0002D7E7F /* UIViewController+Extension.swift */; };
+		C518C8CC27C17ED5007D6DF0 /* RecipeDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518C8CA27C17ED5007D6DF0 /* RecipeDetailsVC.swift */; };
+		C518C8CD27C17ED5007D6DF0 /* RecipeDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C518C8CB27C17ED5007D6DF0 /* RecipeDetailsVC.xib */; };
+		C518C8D027C17F1D007D6DF0 /* DetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518C8CF27C17F1D007D6DF0 /* DetailsProtocol.swift */; };
+		C518C8D327C17F46007D6DF0 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518C8D227C17F46007D6DF0 /* DetailsPresenter.swift */; };
+		C518C8D727C17F5F007D6DF0 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518C8D627C17F5F007D6DF0 /* DetailsInteractor.swift */; };
+		C518C8DB27C17F73007D6DF0 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518C8DA27C17F73007D6DF0 /* DetailsRouter.swift */; };
 		C542DB1527C0EE8400760348 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C542DB1427C0EE8400760348 /* APIRouter.swift */; };
 		C5552E0D27BFD7F400994776 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */; };
 		C5552E0E27BFD7F400994776 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */; };
@@ -47,6 +53,12 @@
 		C514456227C10297002D7E7F /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		C514456627C1099F002D7E7F /* IndicatorFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorFooter.swift; sourceTree = "<group>"; };
 		C514456927C109D0002D7E7F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C518C8CA27C17ED5007D6DF0 /* RecipeDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsVC.swift; sourceTree = "<group>"; };
+		C518C8CB27C17ED5007D6DF0 /* RecipeDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeDetailsVC.xib; sourceTree = "<group>"; };
+		C518C8CF27C17F1D007D6DF0 /* DetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsProtocol.swift; sourceTree = "<group>"; };
+		C518C8D227C17F46007D6DF0 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		C518C8D627C17F5F007D6DF0 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		C518C8DA27C17F73007D6DF0 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
 		C542DB1427C0EE8400760348 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
@@ -82,6 +94,19 @@
 				DEA28F026E613571C32F5D64 /* Pods_TaskForSoftXpert.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C518C8C927C17E8D007D6DF0 /* Details Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C518C8CA27C17ED5007D6DF0 /* RecipeDetailsVC.swift */,
+				C518C8D227C17F46007D6DF0 /* DetailsPresenter.swift */,
+				C518C8D627C17F5F007D6DF0 /* DetailsInteractor.swift */,
+				C518C8DA27C17F73007D6DF0 /* DetailsRouter.swift */,
+				C518C8CF27C17F1D007D6DF0 /* DetailsProtocol.swift */,
+				C518C8CB27C17ED5007D6DF0 /* RecipeDetailsVC.xib */,
+			);
+			path = "Details Scene";
 			sourceTree = "<group>";
 		};
 		C542DB1327C0EE6600760348 /* NetWork */ = {
@@ -176,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				C5DB090227BF99AC008169C7 /* Home Scene */,
+				C518C8C927C17E8D007D6DF0 /* Details Scene */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -273,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C518C8CD27C17ED5007D6DF0 /* RecipeDetailsVC.xib in Resources */,
 				C592841827BF96AD008DAC41 /* LaunchScreen.storyboard in Resources */,
 				C5DB090627BF99EC008169C7 /* HomeVC.xib in Resources */,
 				C5552E0E27BFD7F400994776 /* HomeTableViewCell.xib in Resources */,
@@ -332,19 +359,24 @@
 				C514455827C0F6A8002D7E7F /* HomeProtocol.swift in Sources */,
 				C5DB090527BF99EC008169C7 /* HomeVC.swift in Sources */,
 				C514455027C0F29B002D7E7F /* RecipeResult.swift in Sources */,
+				C518C8CC27C17ED5007D6DF0 /* RecipeDetailsVC.swift in Sources */,
 				C514456027C1005C002D7E7F /* HomeInteractor.swift in Sources */,
+				C518C8D327C17F46007D6DF0 /* DetailsPresenter.swift in Sources */,
 				C514455C27C0FB70002D7E7F /* HomePresenter.swift in Sources */,
 				C5552E0D27BFD7F400994776 /* HomeTableViewCell.swift in Sources */,
 				C5552E1327BFD84300994776 /* ReusableView.swift in Sources */,
 				C592840C27BF96A6008DAC41 /* AppDelegate.swift in Sources */,
 				C514456A27C109D0002D7E7F /* UIViewController+Extension.swift in Sources */,
+				C518C8D727C17F5F007D6DF0 /* DetailsInteractor.swift in Sources */,
 				C514456327C10297002D7E7F /* HomeRouter.swift in Sources */,
+				C518C8DB27C17F73007D6DF0 /* DetailsRouter.swift in Sources */,
 				C514454D27C0F27E002D7E7F /* HealthFilter.swift in Sources */,
 				C542DB1527C0EE8400760348 /* APIRouter.swift in Sources */,
 				C514454A27C0F257002D7E7F /* Recipes.swift in Sources */,
 				C592840E27BF96A6008DAC41 /* SceneDelegate.swift in Sources */,
 				C5552E1727BFDEC800994776 /* FilterCollectionViewCell.swift in Sources */,
 				C514456727C1099F002D7E7F /* IndicatorFooter.swift in Sources */,
+				C518C8D027C17F1D007D6DF0 /* DetailsProtocol.swift in Sources */,
 				C514454727C0F17B002D7E7F /* WebService.swift in Sources */,
 				C514455327C0F2BA002D7E7F /* RecipeDetails.swift in Sources */,
 				C514454427C0F14B002D7E7F /* APIClient.swift in Sources */,
