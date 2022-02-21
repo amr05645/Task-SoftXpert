@@ -7,9 +7,9 @@
 
 import Foundation
 
-class SearchInteractor {
+class HomeInteractor {
     
-    weak var presenter: InteractorToPresenterSearchProtocol?
+    weak var presenter: InteractorToPresenterHomeProtocol?
     
     var webService: WebServiceProtocol?
     
@@ -32,10 +32,11 @@ class SearchInteractor {
         self.recipes = newResult
         self.recipes?.hits = hits
     }
+    
 }
 
-//MARK:- InteractorToPresenterSearchProtocol
-extension SearchInteractor: PresenterToInteractorSearchProtocol {
+//MARK:- InteractorToPresenterHomeProtocol
+extension HomeInteractor: PresenterToInteractorHomeProtocol {
     
     func loadFilterItems() {
         presenter?.didLoadFilterItems(count: HealthFilter.items.count)
@@ -104,4 +105,3 @@ extension SearchInteractor: PresenterToInteractorSearchProtocol {
         return suggestions
     }
 }
-

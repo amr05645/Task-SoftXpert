@@ -8,9 +8,9 @@
 import Foundation
 
 // MARK: View Output (Presenter -> View)
-protocol PresenterToViewSearchProtocol: class {
+protocol PresenterToViewHomeProtocol: class {
     
-    var presenter: ViewToPresenterSearchProtocol? { get set }
+    var presenter: ViewToPresenterHomeProtocol? { get set }
     
     func resetResultsView()
     func updateResultsView()
@@ -30,11 +30,11 @@ protocol PresenterToViewSearchProtocol: class {
 
 
 // MARK: View Input (View -> Presenter)
-protocol ViewToPresenterSearchProtocol: class {
+protocol ViewToPresenterHomeProtocol: class {
     
-    var view: PresenterToViewSearchProtocol? { get set }
-    var interactor: PresenterToInteractorSearchProtocol? { get set }
-    var router: RouterSearchProtocol? { get set }
+    var view: PresenterToViewHomeProtocol? { get set }
+    var interactor: PresenterToInteractorHomeProtocol? { get set }
+    var router: RouterHomeProtocol? { get set }
     var numberOfRows: Int? { get set }
     var numberOfCollectionViewItems: Int? { get set }
     
@@ -50,9 +50,9 @@ protocol ViewToPresenterSearchProtocol: class {
 
 
 // MARK: Interactor Input (Presenter -> Interactor)
-protocol PresenterToInteractorSearchProtocol: class {
+protocol PresenterToInteractorHomeProtocol: class {
     
-    var presenter: InteractorToPresenterSearchProtocol? { get set }
+    var presenter: InteractorToPresenterHomeProtocol? { get set }
     var webService: WebServiceProtocol? { get set }
     var isFetchingPage: Bool { get set }
     
@@ -70,7 +70,7 @@ protocol PresenterToInteractorSearchProtocol: class {
 
 
 // MARK: Interactor Output (Interactor -> Presenter)
-protocol InteractorToPresenterSearchProtocol: class {
+protocol InteractorToPresenterHomeProtocol: class {
     
     func didLoadFilterItems(count: Int)
     func fetchDidRetrieve(count: Int?)
@@ -81,11 +81,11 @@ protocol InteractorToPresenterSearchProtocol: class {
 
 
 // MARK: Router Input (Presenter -> Router)
-protocol RouterSearchProtocol: class {
+protocol RouterHomeProtocol: class {
     
     var entry: EntryPoint? { get }
     
-    static func start() -> RouterSearchProtocol
+    static func start() -> RouterHomeProtocol
     
     func pushToRecipeDetails(with recipe: Recipe)
 }

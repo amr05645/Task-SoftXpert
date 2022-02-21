@@ -11,7 +11,7 @@ import DropDown
 class HomeVC: UIViewController {
     
     // MARK:- Properties
-    var presenter: ViewToPresenterSearchProtocol?
+    var presenter: ViewToPresenterHomeProtocol?
     var selectedCellIndexpth = IndexPath(item: 0, section: 0)
     let dropDown = DropDown()
     let footer = IndicatorFooter()
@@ -190,8 +190,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-//MARK:- PresenterToViewSearchProtocol
-extension HomeVC: PresenterToViewSearchProtocol {
+//MARK:- PresenterToViewHomeProtocol
+extension HomeVC: PresenterToViewHomeProtocol {
     
     func showDropDown(with data: [String]) {
         dropDown.dataSource = data

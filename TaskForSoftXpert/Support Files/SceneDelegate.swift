@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
         
-        let router = SearchRouter.start()
+        let router = HomeRouter.start()
         let rootVC = router.entry
         
         self.window?.rootViewController = UINavigationController(rootViewController: rootVC!)

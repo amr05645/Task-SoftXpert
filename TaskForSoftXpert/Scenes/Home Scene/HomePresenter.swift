@@ -7,11 +7,11 @@
 
 import Foundation
 
-class SearchPresenter {
+class HomePresenter {
     
-    weak var view: PresenterToViewSearchProtocol?
-    var interactor: PresenterToInteractorSearchProtocol?
-    var router: RouterSearchProtocol?
+    weak var view: PresenterToViewHomeProtocol?
+    var interactor: PresenterToInteractorHomeProtocol?
+    var router: RouterHomeProtocol?
     
     var numberOfRows: Int?
     var numberOfCollectionViewItems: Int?
@@ -49,8 +49,8 @@ class SearchPresenter {
     }
 }
 
-//MARK:- ViewToPresenterSearchProtocol
-extension SearchPresenter: ViewToPresenterSearchProtocol {
+//MARK:- ViewToPresenterHomeProtocol
+extension HomePresenter: ViewToPresenterHomeProtocol {
     func didStartTyping() {
         let suggestions = getSuggestions()
         
@@ -111,8 +111,8 @@ extension SearchPresenter: ViewToPresenterSearchProtocol {
     
 }
 
-//MARK:- InteractorToPresenterSearchProtocol
-extension SearchPresenter: InteractorToPresenterSearchProtocol {
+//MARK:- InteractorToPresenterHomeProtocol
+extension HomePresenter: InteractorToPresenterHomeProtocol {
     
     func didLoadFilterItems(count: Int) {
         self.numberOfCollectionViewItems = count

@@ -7,23 +7,23 @@
 
 import UIKit
 
-typealias EntryPoint = PresenterToViewSearchProtocol & UIViewController
+typealias EntryPoint = PresenterToViewHomeProtocol & UIViewController
 
-class SearchRouter: RouterSearchProtocol {
+class HomeRouter: RouterHomeProtocol {
     
-    typealias SearchPresenterProtocol = ViewToPresenterSearchProtocol & InteractorToPresenterSearchProtocol
+    typealias HomePresenterProtocol = ViewToPresenterHomeProtocol & InteractorToPresenterHomeProtocol
     
     
     var entry: EntryPoint?
     
-    static func start() -> RouterSearchProtocol {
+    static func start() -> RouterHomeProtocol {
         
         let webService = WebServices()
         
-        let router = SearchRouter()
+        let router = HomeRouter()
         let view: EntryPoint = HomeVC()
-        let presenter: SearchPresenterProtocol = SearchPresenter()
-        let interactor: PresenterToInteractorSearchProtocol = SearchInteractor(webService: webService)
+        let presenter: HomePresenterProtocol = HomePresenter()
+        let interactor: PresenterToInteractorHomeProtocol = HomeInteractor(webService: webService)
         
         view.presenter = presenter
         

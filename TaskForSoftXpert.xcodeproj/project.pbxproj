@@ -27,10 +27,14 @@
 		C518C8D727C17F5F007D6DF0 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518C8D627C17F5F007D6DF0 /* DetailsInteractor.swift */; };
 		C518C8DB27C17F73007D6DF0 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518C8DA27C17F73007D6DF0 /* DetailsRouter.swift */; };
 		C542DB1527C0EE8400760348 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C542DB1427C0EE8400760348 /* APIRouter.swift */; };
+		C547729E27C387EE005697A6 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547729D27C387EE005697A6 /* HomePresenterTests.swift */; };
+		C54772A427C38828005697A6 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54772A327C38828005697A6 /* HomeInteractorTests.swift */; };
+		C54772A827C38848005697A6 /* HomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54772A727C38848005697A6 /* HomeRouterTests.swift */; };
 		C5552E0D27BFD7F400994776 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */; };
 		C5552E0E27BFD7F400994776 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */; };
 		C5552E1327BFD84300994776 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E1227BFD84300994776 /* ReusableView.swift */; };
 		C5552E1727BFDEC800994776 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5552E1527BFDEC800994776 /* FilterCollectionViewCell.swift */; };
+		C56543D127C379B400C8C26C /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56543D027C379B400C8C26C /* ModelTests.swift */; };
 		C592840C27BF96A6008DAC41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592840B27BF96A6008DAC41 /* AppDelegate.swift */; };
 		C592840E27BF96A6008DAC41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592840D27BF96A6008DAC41 /* SceneDelegate.swift */; };
 		C592841527BF96AD008DAC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C592841427BF96AD008DAC41 /* Assets.xcassets */; };
@@ -38,6 +42,16 @@
 		C5DB090527BF99EC008169C7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB090327BF99EB008169C7 /* HomeVC.swift */; };
 		C5DB090627BF99EC008169C7 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5DB090427BF99EB008169C7 /* HomeVC.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C56543D327C379B400C8C26C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C592840027BF96A6008DAC41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C592840727BF96A6008DAC41;
+			remoteInfo = TaskForSoftXpert;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		75452CAB09F5E825127E9A4F /* Pods-TaskForSoftXpert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskForSoftXpert.release.xcconfig"; path = "Target Support Files/Pods-TaskForSoftXpert/Pods-TaskForSoftXpert.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,10 +74,16 @@
 		C518C8D627C17F5F007D6DF0 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
 		C518C8DA27C17F73007D6DF0 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
 		C542DB1427C0EE8400760348 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		C547729D27C387EE005697A6 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		C54772A327C38828005697A6 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		C54772A727C38848005697A6 /* HomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterTests.swift; sourceTree = "<group>"; };
 		C5552E0B27BFD7F400994776 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C5552E0C27BFD7F400994776 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		C5552E1227BFD84300994776 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		C5552E1527BFDEC800994776 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		C56543CE27C379B400C8C26C /* TaskForSoftXpertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskForSoftXpertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56543D027C379B400C8C26C /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		C56543D227C379B400C8C26C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C592840827BF96A6008DAC41 /* TaskForSoftXpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskForSoftXpert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C592840B27BF96A6008DAC41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C592840D27BF96A6008DAC41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +97,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C56543CB27C379B400C8C26C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C592840527BF96A6008DAC41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,6 +146,16 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
+		C547729C27C38792005697A6 /* Home Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C547729D27C387EE005697A6 /* HomePresenterTests.swift */,
+				C54772A327C38828005697A6 /* HomeInteractorTests.swift */,
+				C54772A727C38848005697A6 /* HomeRouterTests.swift */,
+			);
+			path = "Home Tests";
+			sourceTree = "<group>";
+		};
 		C5552E0827BFD7A100994776 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,10 +192,29 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		C56543CF27C379B400C8C26C /* TaskForSoftXpertTests */ = {
+			isa = PBXGroup;
+			children = (
+				C56543DA27C3858A00C8C26C /* Model Tests */,
+				C547729C27C38792005697A6 /* Home Tests */,
+				C56543D227C379B400C8C26C /* Info.plist */,
+			);
+			path = TaskForSoftXpertTests;
+			sourceTree = "<group>";
+		};
+		C56543DA27C3858A00C8C26C /* Model Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C56543D027C379B400C8C26C /* ModelTests.swift */,
+			);
+			path = "Model Tests";
+			sourceTree = "<group>";
+		};
 		C59283FF27BF96A6008DAC41 = {
 			isa = PBXGroup;
 			children = (
 				C592840A27BF96A6008DAC41 /* TaskForSoftXpert */,
+				C56543CF27C379B400C8C26C /* TaskForSoftXpertTests */,
 				C592840927BF96A6008DAC41 /* Products */,
 				D9AE223BDAF967FBEC618CF2 /* Pods */,
 				56F8736FA702FDCEA5F18FD2 /* Frameworks */,
@@ -169,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				C592840827BF96A6008DAC41 /* TaskForSoftXpert.app */,
+				C56543CE27C379B400C8C26C /* TaskForSoftXpertTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,9 +233,9 @@
 		C592840A27BF96A6008DAC41 /* TaskForSoftXpert */ = {
 			isa = PBXGroup;
 			children = (
-				C542DB1327C0EE6600760348 /* NetWork */,
-				C5DB090827BFC723008169C7 /* Model */,
 				C5DB090127BF997B008169C7 /* Scenes */,
+				C5DB090827BFC723008169C7 /* Model */,
+				C542DB1327C0EE6600760348 /* NetWork */,
 				C5552E1027BFD82500994776 /* Helpers */,
 				C592842527BF97BF008DAC41 /* Support Files */,
 			);
@@ -243,6 +300,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C56543CD27C379B400C8C26C /* TaskForSoftXpertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56543D527C379B400C8C26C /* Build configuration list for PBXNativeTarget "TaskForSoftXpertTests" */;
+			buildPhases = (
+				C56543CA27C379B400C8C26C /* Sources */,
+				C56543CB27C379B400C8C26C /* Frameworks */,
+				C56543CC27C379B400C8C26C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C56543D427C379B400C8C26C /* PBXTargetDependency */,
+			);
+			name = TaskForSoftXpertTests;
+			productName = TaskForSoftXpertTests;
+			productReference = C56543CE27C379B400C8C26C /* TaskForSoftXpertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C592840727BF96A6008DAC41 /* TaskForSoftXpert */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C592841C27BF96AD008DAC41 /* Build configuration list for PBXNativeTarget "TaskForSoftXpert" */;
@@ -271,6 +346,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					C56543CD27C379B400C8C26C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C592840727BF96A6008DAC41;
+					};
 					C592840727BF96A6008DAC41 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -290,11 +369,19 @@
 			projectRoot = "";
 			targets = (
 				C592840727BF96A6008DAC41 /* TaskForSoftXpert */,
+				C56543CD27C379B400C8C26C /* TaskForSoftXpertTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C56543CC27C379B400C8C26C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C592840627BF96A6008DAC41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,6 +439,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C56543CA27C379B400C8C26C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54772A427C38828005697A6 /* HomeInteractorTests.swift in Sources */,
+				C54772A827C38848005697A6 /* HomeRouterTests.swift in Sources */,
+				C56543D127C379B400C8C26C /* ModelTests.swift in Sources */,
+				C547729E27C387EE005697A6 /* HomePresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C592840427BF96A6008DAC41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +483,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C56543D427C379B400C8C26C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C592840727BF96A6008DAC41 /* TaskForSoftXpert */;
+			targetProxy = C56543D327C379B400C8C26C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		C592841627BF96AD008DAC41 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -397,6 +503,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C56543D627C379B400C8C26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WSH653UKSN;
+				INFOPLIST_FILE = TaskForSoftXpertTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amr.TaskForSoftXpertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskForSoftXpert.app/TaskForSoftXpert";
+			};
+			name = Debug;
+		};
+		C56543D727C379B400C8C26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WSH653UKSN;
+				INFOPLIST_FILE = TaskForSoftXpertTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amr.TaskForSoftXpertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskForSoftXpert.app/TaskForSoftXpert";
+			};
+			name = Release;
+		};
 		C592841A27BF96AD008DAC41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -558,6 +706,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C56543D527C379B400C8C26C /* Build configuration list for PBXNativeTarget "TaskForSoftXpertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56543D627C379B400C8C26C /* Debug */,
+				C56543D727C379B400C8C26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C592840327BF96A6008DAC41 /* Build configuration list for PBXProject "TaskForSoftXpert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

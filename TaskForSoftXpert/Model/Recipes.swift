@@ -47,7 +47,7 @@ struct Next: Codable {
 }
 
 // MARK: - Recipe
-struct Recipe: Codable {
+struct Recipe: Codable, Equatable {
     var label: String?
     var image: String?
     var source: String?

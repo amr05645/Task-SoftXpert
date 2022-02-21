@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         DropDown.startListeningToKeyboard()
         
-        let router = SearchRouter.start()
+        let router = HomeRouter.start()
         let rootVC = router.entry
         
         self.window?.rootViewController = UINavigationController(rootViewController: rootVC!)
