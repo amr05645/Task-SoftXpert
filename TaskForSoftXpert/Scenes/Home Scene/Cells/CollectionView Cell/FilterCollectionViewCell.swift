@@ -13,8 +13,8 @@ class FilterCollectionViewCell: UICollectionViewCell, ReusableView {
     
     override var isSelected: Bool {
         didSet {
-            self.titleLabel.textColor = isSelected ? UIColor(named: "titleColor") : #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
-            self.backgroundColor = UIColor(named: "menuColor")
+            self.titleLabel.textColor = isSelected ? UIColor(named: "titleColor") : #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
+            self.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         }
     }
     

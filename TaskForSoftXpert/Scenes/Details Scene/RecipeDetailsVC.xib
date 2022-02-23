@@ -26,16 +26,16 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="269"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fAS-ew-7lR">
-                    <rect key="frame" x="0.0" y="323" width="414" height="50"/>
+                    <rect key="frame" x="0.0" y="323" width="414" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="447-tL-5Q7"/>
+                        <constraint firstAttribute="height" constant="40" id="447-tL-5Q7"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IfR-0c-wpp">
-                    <rect key="frame" x="0.0" y="383" width="414" height="424"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IfR-0c-wpp">
+                    <rect key="frame" x="10" y="373" width="394" height="434"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" systemColor="labelColor"/>
@@ -58,7 +58,7 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
             <constraints>
                 <constraint firstItem="YUW-3n-5MW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1lH-38-uOF"/>
                 <constraint firstItem="YUW-3n-5MW" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="27l-Y4-SII"/>
@@ -71,7 +71,7 @@
                 <constraint firstItem="Fd3-Ii-kZH" firstAttribute="top" secondItem="IfR-0c-wpp" secondAttribute="bottom" constant="10" id="amL-pt-A0Z"/>
                 <constraint firstItem="Fd3-Ii-kZH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="jn8-iQ-GYI"/>
                 <constraint firstItem="Fd3-Ii-kZH" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="k39-lS-RTl"/>
-                <constraint firstItem="IfR-0c-wpp" firstAttribute="leading" secondItem="fAS-ew-7lR" secondAttribute="leading" id="mHl-UZ-usY"/>
+                <constraint firstItem="IfR-0c-wpp" firstAttribute="leading" secondItem="fAS-ew-7lR" secondAttribute="leading" constant="10" id="mHl-UZ-usY"/>
                 <constraint firstItem="IfR-0c-wpp" firstAttribute="centerX" secondItem="fAS-ew-7lR" secondAttribute="centerX" id="mZB-bz-nG8"/>
                 <constraint firstItem="YUW-3n-5MW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xWC-SR-yyI"/>
             </constraints>
@@ -84,6 +84,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
